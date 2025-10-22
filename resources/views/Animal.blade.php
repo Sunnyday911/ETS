@@ -1,7 +1,7 @@
 <x-layout>
   <div class="max-w-5xl w-full mt-6" >
 
-    {{-- Header: title + Add button on the right --}}
+    
     <div class="flex items-center justify-between mb-6">
       <h1 class="text-3xl font-semibold text-gray-800">Animals</h1>
 
@@ -21,7 +21,7 @@
       @endforeach
     </div>
 
-    {{-- Pagination --}}
+    
     <div class="mt-8 flex justify-center">
       {{ $animal->links() }}
     </div>

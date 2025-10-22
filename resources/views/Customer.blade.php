@@ -1,7 +1,7 @@
 <x-layout>
   <div class="max-w-6xl w-full mt-6">
 
-    {{-- Header: title + Add button --}}
+    
     <div class="flex items-center justify-between mb-6">
       <h1 class="text-3xl font-semibold text-gray-800">Customers</h1>
       <a href="{{ route('create') }}"
@@ -10,7 +10,7 @@
       </a>
     </div>
 
-    {{-- Daftar Kartu --}}
+    
     <div class="mt-6 space-y-5">
       @foreach($customer as $cust)
         <x-card href="{{ route('more', $cust->id) }}">
@@ -21,7 +21,7 @@
       @endforeach
     </div>
 
-    {{-- Pagination --}}
+    
     <div class="mt-8 flex justify-center">
       {{ $customer->links() }}
     </div>

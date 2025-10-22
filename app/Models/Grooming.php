@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Grooming extends Model
 {
     protected $fillable = ['date', 'service_type', 'animal_id', 'price']; 
-    /** @use HasFactory<\Database\Factories\CustomerFactory> */
+    
     use HasFactory;
 
     public function animal(){

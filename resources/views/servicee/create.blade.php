@@ -21,7 +21,7 @@
           <label for="animal_id" class="block font-medium text-gray-700 mb-1">Animal:</label>
           <select id="animal_id" name="animal_id" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
             <option value="" disabled selected>Select Animal</option>
-            @foreach ($animal as $anim)
+              @foreach ($animal as $anim)
               <option value="{{ $anim->id }}">{{ $anim->name }}</option>
             @endforeach
           </select>
